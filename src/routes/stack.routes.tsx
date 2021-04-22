@@ -6,10 +6,10 @@ import { Welcome } from '../pages/Welcome';
 import { Confirmation } from '../pages/Confirmation';
 import { UserIdentification } from '../pages/UserIdentification';
 
-const stackRoutes = createStackNavigator();
+const StackRoutes = createStackNavigator();
 
 const AppRoutes: React.FC = () => (
-    <stackRoutes.Navigator
+    <StackRoutes.Navigator
         headerMode="none"
         screenOptions={{
             cardStyle: {
@@ -17,22 +17,22 @@ const AppRoutes: React.FC = () => (
             }
         }}
     >
-        <stackRoutes.Screen 
+        <StackRoutes.Screen 
             name="Welcome"
             component={Welcome}
         />
 
-        <stackRoutes.Screen 
+        <StackRoutes.Screen 
             name="UserIdentification"
             component={UserIdentification}
         />
 
-        <stackRoutes.Screen 
+        <StackRoutes.Screen 
             name="Confirmation"
             component={Confirmation}
         />
 
-    </stackRoutes.Navigator>
+    </StackRoutes.Navigator>
 )
 
 export default AppRoutes;

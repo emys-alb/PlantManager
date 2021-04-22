@@ -3,17 +3,17 @@ import {
     Text, 
     Image, 
     StyleSheet, 
-    SafeAreaViewBase, 
+    SafeAreaView, 
     TouchableOpacity, 
     Dimensions, 
     View
 } from 'react-native';
 import { Feather } from "@expo/vector-icons";
+import { useNavigation } from '@react-navigation/core';
 
 import wateringImg from '../assets/watering.png';
 import colors from  '../styles/colors';
 import fonts from '../styles/fonts';
-import { useNavigation } from '@react-navigation/core';
 
 export function Welcome() {
     const navigation = useNavigation();
@@ -22,9 +22,8 @@ export function Welcome() {
         navigation.navigate('UserIdentification')
     }
 
-
     return(
-        <SafeAreaViewBase style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <View style={styles.wrapper}>
 
                 <Text style={styles.title}>
@@ -56,7 +55,7 @@ export function Welcome() {
     
                 </TouchableOpacity>           
             </View>
-        </SafeAreaViewBase>
+        </SafeAreaView>
     )
 }
 
