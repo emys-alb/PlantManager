@@ -10,10 +10,12 @@ import {
     Platform,
     Keyboard
 } from 'react-native';
+
+import { useNavigation } from '@react-navigation/core';
+
 import Button from '../components/Button';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
-import { useNavigation } from '@react-navigation/core';
 
 export function UserIdentification() {
     const [isFocused, setIsFocused] = useState(false);
