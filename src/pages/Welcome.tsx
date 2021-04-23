@@ -33,9 +33,9 @@ export function Welcome() {
                 </Text>
             
                 <Image 
-                    source={wateringImg}
-                    style={styles.image} 
-                    resizeMode='contain'
+                source={wateringImg} 
+                style={styles.image}
+                resizeMode="contain"
                 />
 
                 <Text style={styles.subtitle}>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
         color: colors.heading
     },
     image: {
-        height: Dimensions.get('window').width = 0.7,
+        height: Dimensions.get('window').width * 0.7,
     },
     button: {
         backgroundColor: colors.green,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper'
-import userImg from '../assets/eu.jpg';
+import userImg from '../../assets/eu.jpg';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
@@ -10,7 +10,7 @@ export function Header() {
     return(
         <View style={styles.container}>
               <View>
-                <Text style={styles.greeting}>Ola,</Text>
+                <Text style={styles.greeting}>Olá,</Text>
                 <Text style={styles.userName}>Emilly</Text>
             </View>
             <Image source={userImg} style={styles.image}/>
